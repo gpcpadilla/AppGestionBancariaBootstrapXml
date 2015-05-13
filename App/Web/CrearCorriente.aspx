@@ -31,7 +31,7 @@
              </div>
              
              <div class="form-group">
-                <asp:Button ID="btnGuardar" runat="server" Text="Guardar" class="btn btn-group-lg btn-success" OnClick="btnGuardar_Click"/>
+                <asp:Button  ID="btnGuardar" runat="server" Text="Guardar" class="btn btn-group-lg btn-success" OnClick="btnGuardar_Click"/>
              </div>  
     </div>
     </form>

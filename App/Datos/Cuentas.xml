@@ -1,19 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Corrientes>
   <Corrientes>
-    <Cliente>414</Cliente>
-    <IDCliente>clei</IDCliente>
-    <Identificacion>104</Identificacion>
-    <Balance>22</Balance>
-    <LimiteCreditos>12</LimiteCreditos>
-    <TasaInteres>5</TasaInteres>
-  </Corrientes>
-  <Corrientes>
-    <Cliente>414</Cliente>
-    <IDCliente>clei</IDCliente>
-    <Identificacion>104</Identificacion>
-    <Balance>22</Balance>
-    <LimiteCreditos>12</LimiteCreditos>
-    <TasaInteres>5</TasaInteres>
+    <Cliente>54</Cliente>
+    <IDCliente>54</IDCliente>
+    <Identificacion>21</Identificacion>
+    <Balance>87</Balance>
+    <LimiteCreditos>54</LimiteCreditos>
+    <TasaInteres>6534</TasaInteres>
   </Corrientes>
 </Corrientes>

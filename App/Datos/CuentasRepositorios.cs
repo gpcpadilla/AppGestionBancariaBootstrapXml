@@ -38,7 +38,7 @@ namespace App.Datos
                                                 c.Element("IdCliente").Value,
                                                 double.Parse(c.Element("Balance").Value),
                                                 double.Parse(c.Element("LimitesCreditos").Value),
-                                                 double.Parse(c.Element("TasaInteres").Value)
+                                                double.Parse(c.Element("TasaInteres").Value)
                                                
                    
                    

@@ -10,7 +10,7 @@
 namespace App.Web {
     
     
-    public partial class Listar {
+    public partial class ListarCorriente {
         
         /// <summary>
         /// Control form1.
