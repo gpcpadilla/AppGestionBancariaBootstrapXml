@@ -9,17 +9,17 @@ namespace App.Modelo
    public class Cheques: Cuentas
     {
         #region "Atributos"
-        private float tasaInteres;
+        private double tasaInterest;
         private static int count = 0;
         private static int numeroTransaciones = 3;
         #endregion
 
         #region "Propiedades"
 
-        public float Tasadeinteres
+        public double Tasadeinteres
         {
-            get { return tasaInteres; }
-            set { tasaInteres = value; }
+            get { return tasaInterest; }
+            set { tasaInterest = value; }
         }
         #endregion
 
@@ -31,13 +31,13 @@ namespace App.Modelo
         ///
         public Cheques():base()
         {
-            this.tasaInteres = 0;
+            this.tasaInterest = 0;
         }
 
-        public Cheques(string cliente, string identificacion, string idcliente,double balance,float tasadeinteres)
+        public Cheques(string cliente, string identificacion, string idcliente,double balance,double tasadeinteres)
                     :base( cliente,  identificacion,  idcliente, balance)
         {
-            this.tasaInteres = tasadeinteres;
+            this.tasaInterest = tasadeinteres;
         }
 
         #endregion
@@ -47,7 +47,7 @@ namespace App.Modelo
         public override string ToString()
         {
             return base.ToString() +
-                   "\nTasa de Interes: " + this.tasaInteres;
+                   "\nTasa de Interes: " + this.tasaInterest;
         }
         public override bool Equals(object obj)
         {
@@ -55,7 +55,7 @@ namespace App.Modelo
             bool result = false;
 
             if ((base.Equals(o)) &&
-               (this.tasaInteres == o.tasaInteres))
+               (this.tasaInterest == o.tasaInterest))
                 result = true;
 
             return result;
@@ -76,7 +76,7 @@ namespace App.Modelo
         {
             count++;
             if (count > numeroTransaciones)
-                this.Balance = (this.Balance - (valor + this.tasaInteres));
+                this.Balance = (this.Balance - (valor + this.tasaInterest));
 
             else
                 this.Balance = this.Balance - valor;

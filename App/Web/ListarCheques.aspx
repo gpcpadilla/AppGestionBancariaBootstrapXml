@@ -1,12 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Web/Site1.Master" AutoEventWireup="true" CodeBehind="ListarCorriente.aspx.cs" Inherits="App.Web.ListarCorriente" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Web/Site1.Master" AutoEventWireup="true" CodeBehind="ListarCheques.aspx.cs" Inherits="App.Web.ListarChques" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
- <form id="form1" runat="server">
+     <form id="form1" runat="server">
     <div class="jumbotron">
-        <h2>Lista De Cuentas Corrientes</h2>
+        <h2>Lista De Cheques</h2>
         <div class ="table-responsive">
-            <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="ObjectDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" Height="226px" Width="680px">
+            <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="ObjectDataSource3" CellPadding="4" ForeColor="#333333" GridLines="None" Height="226px" Width="680px">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <Columns>
                     <asp:BoundField DataField="Tasadeinteres" HeaderText="Tasadeinteres" SortExpression="Tasadeinteres" />
@@ -27,7 +27,7 @@
                 <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
             </asp:GridView>
             <br />    
-            <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="getCorrientes" TypeName="App.Datos.CuentasCorrientes"></asp:ObjectDataSource>
+            <asp:ObjectDataSource ID="ObjectDataSource3" runat="server" SelectMethod="getCheques" TypeName="App.Datos.CuentasCheques"></asp:ObjectDataSource>
     </div>
     </div>
 </form>

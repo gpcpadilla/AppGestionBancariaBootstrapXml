@@ -12,7 +12,7 @@ using System.Xml.Linq;
 
 namespace App.Datos
 {
-    public class CuentasRepositorios
+    public class CuentasCorrientes
     {
         private static List<Corrientes> data = new List<Corrientes>();
       
@@ -70,7 +70,7 @@ namespace App.Datos
             xmlwriter.Indentation = 2;
 
             //ROOT Element
-            xmlwriter.WriteStartElement("Corrientes");
+            xmlwriter.WriteStartElement("Cuentas");
             //Call create nodes method
             foreach(Corrientes c in list)
             {
@@ -83,6 +83,8 @@ namespace App.Datos
                 xmlwriter.WriteElementString("TasaInteres", c.TasaInteres.ToString());
                 xmlwriter.WriteEndElement();
             }
+
+
                
             xmlwriter.WriteEndElement();
 

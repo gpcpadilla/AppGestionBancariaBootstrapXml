@@ -10,7 +10,7 @@
 namespace App.Web {
     
     
-    public partial class Crear {
+    public partial class CrearAhorro {
         
         /// <summary>
         /// Control form1.
@@ -22,58 +22,49 @@ namespace App.Web {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Control txtcliente.
+        /// Control txtCliente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtcliente;
+        protected global::System.Web.UI.WebControls.TextBox txtCliente;
         
         /// <summary>
-        /// Control txtidcliente.
+        /// Control txtIdentificacion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtidcliente;
+        protected global::System.Web.UI.WebControls.TextBox txtIdentificacion;
         
         /// <summary>
-        /// Control txtidentificacion.
+        /// Control txtIDcliente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtidentificacion;
+        protected global::System.Web.UI.WebControls.TextBox txtIDcliente;
         
         /// <summary>
-        /// Control txtbalance.
+        /// Control txtBalance.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtbalance;
+        protected global::System.Web.UI.WebControls.TextBox txtBalance;
         
         /// <summary>
-        /// Control txtlimitesDeCreditos.
+        /// Control txtTasadeinteres.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtlimitesDeCreditos;
-        
-        /// <summary>
-        /// Control txttasaInteres.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txttasaInteres;
+        protected global::System.Web.UI.WebControls.TextBox txtTasadeinteres;
         
         /// <summary>
         /// Control btnGuardar.

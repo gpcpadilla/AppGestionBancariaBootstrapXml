@@ -7,14 +7,9 @@ using System.Web.UI.WebControls;
 
 namespace App.Web
 {
-    public partial class ListarCorriente : System.Web.UI.Page
+    public partial class ListarChques : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void ObjectDataSource1_Selecting(object sender, ObjectDataSourceSelectingEventArgs e)
         {
 
         }

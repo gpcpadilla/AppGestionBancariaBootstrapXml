@@ -8,14 +8,14 @@ namespace App.Modelo
     public class Ahorros : Cuentas
     {
         #region "Atributos"
-        private float tasaInteres;
+        private double tasaInteres;
         private static int count = 0;
         private static int numeroTransaciones = 3;
         #endregion
 
         #region "Propiedades"
 
-        public float Tasadeinteres
+        public double Tasadeinteres
         {
             get { return tasaInteres; }
             set { tasaInteres = value; }
@@ -34,7 +34,7 @@ namespace App.Modelo
             this.tasaInteres = 0;
         }
 
-        public Ahorros(string cliente, string identificacion, string idcliente, double balance, float tasadeinteres)
+        public Ahorros(string cliente, string identificacion, string idcliente, double balance, double tasadeinteres)
             : base(cliente, identificacion, idcliente, balance)
         {
             this.tasaInteres = tasadeinteres;

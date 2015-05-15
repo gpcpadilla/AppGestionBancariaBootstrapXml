@@ -29,11 +29,10 @@ namespace App.Web
                                         balance,
                                         limitesDeCreditos,
                                         tasaInteres
-                                        
-                                        
+                                                                              
                                        );
 
-            CuentasRepositorios data = new CuentasRepositorios();
+            CuentasCorrientes data = new CuentasCorrientes();
 
             data.add(c);
           
