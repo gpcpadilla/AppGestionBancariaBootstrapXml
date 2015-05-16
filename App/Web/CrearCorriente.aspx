@@ -21,8 +21,6 @@
                  <asp:TextBox ID="txtidentificacion" runat="server" class="form-control"  pattern="[1234567890]*" required="" title="Digite Indentificacion Correcta" ></asp:TextBox> 
           </div>  
              
-        
-
              <div class="form-group">
                 <label class="control-label" >Balance</label>
                  <asp:TextBox  ID="txtbalance" runat="server" class="form-control"   pattern="[1234567890]*" required="" title="Digite Un Valor Correcto"></asp:TextBox>
@@ -31,11 +29,12 @@
              
              <div class="form-group">
                 <label class="control-label" > Limites De Creditos</label>     
-                 <asp:TextBox ID="txtlimitesDeCreditos" runat="server" class="form-control"  pattern="[1234567890]*" required="" title="Digite Un Valor Correcto" ></asp:TextBox>
+                 <asp:TextBox ID="txtLimitesCreditos" runat="server" class="form-control"  pattern="[1234567890]*" required="" title="Digite Un Valor Correcto" ></asp:TextBox>
              </div>
+
              <div class="form-group">
                 <label class="control-label" > Tasa De Interes</label>
-                 <asp:TextBox ID="txttasaInteres" runat="server" class="form-control" pattern="[1234567890]*" required="" title="Digite Un Valor Correcto" ></asp:TextBox>
+                 <asp:TextBox ID="txtTasaInteres" runat="server" class="form-control" pattern="[1234567890]*" required="" title="Digite Un Valor Correcto" ></asp:TextBox>
              </div>
              
              <div class="form-group">

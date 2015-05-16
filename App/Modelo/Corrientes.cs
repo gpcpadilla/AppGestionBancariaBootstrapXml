@@ -8,22 +8,22 @@ namespace App.Modelo
      public class Corrientes : Cuentas
     {
         #region "Atributos"
-        private double limitesCreditos;
-        private double tasaInteres;
+        private double limitescreditos;
+        private double tasainteres;
         private static int count = 0;
         private static int numeroTransaciones = 3;
         #endregion
 
         #region "Propiedades"
-        public double LimitesCreditos
+        public double LimitesDeCreditos
         {
-            get { return limitesCreditos; }
-            set { limitesCreditos = value; }
+            get { return limitescreditos; }
+            set { limitescreditos = value; }
         }
-        public double TasaInteres
+        public double TasaDeInteres
         {
-            get { return tasaInteres; }
-            set { tasaInteres = value; }
+            get { return tasainteres; }
+            set { tasainteres = value; }
         }
         #endregion
 
@@ -34,14 +34,13 @@ namespace App.Modelo
         public Corrientes()
             : base()
         {
-            this.limitesCreditos = 0;
-            this.tasaInteres = 0;
+            this.limitescreditos = 0;
+            this.tasainteres = 0;
         }
-        public Corrientes(string cliente, string identificacion, string idcliente, double balance, double limitesDeCreditos, double tasadeinteres)
+        public Corrientes(string cliente, string identificacion, string idcliente, double balance, double limitescreditos, double tasadeinteres)
             : base(cliente, identificacion, idcliente, balance)
         {
-            this.limitesCreditos = limitesDeCreditos;
-            this.tasaInteres = tasadeinteres;
+            
         }
         #endregion
 
@@ -49,8 +48,8 @@ namespace App.Modelo
         public override string ToString()
         {
             return base.ToString() +
-                     "\nLimite de Creditos:  " + this.limitesCreditos + "\n" +
-                     "\nTasa de Interes:  " + this.tasaInteres;
+                     "\nLimite de Creditos:  " + this.limitescreditos + "\n" +
+                     "\nTasa de Interes:  " + this.tasainteres;
         }
 
         public override bool Equals(object obj)
@@ -59,8 +58,8 @@ namespace App.Modelo
             bool result = false;
 
             if ((base.Equals(o)) &&
-                (this.limitesCreditos == o.limitesCreditos) &&
-                (this.tasaInteres == o.tasaInteres))
+                (this.limitescreditos == o.limitescreditos) &&
+                (this.tasainteres == o.tasainteres))
 
                 result = true;
 
@@ -80,8 +79,8 @@ namespace App.Modelo
         public override string retitar(double valor)
         {
             count++;
-            if ((count > numeroTransaciones) && (valor < this.limitesCreditos))
-                this.Balance = (this.Balance - (valor + this.tasaInteres));
+            if ((count > numeroTransaciones) && (valor < this.limitescreditos))
+                this.Balance = (this.Balance - (valor + this.tasainteres));
 
             else
                 this.Balance = this.Balance - valor;

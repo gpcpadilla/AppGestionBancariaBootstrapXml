@@ -2,14 +2,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
- <form id="form1" runat="server">
+    <form id="form1" runat="server">
     <div class="jumbotron">
         <h2>Lista De Cuentas De Ahorros</h2>
         <div class ="table-responsive">
             <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="ObjectDataSource2" CellPadding="4" ForeColor="#333333" GridLines="None" Height="226px" Width="680px">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <Columns>
-                    <asp:BoundField DataField="Tasadeinteres" HeaderText="Tasadeinteres" SortExpression="Tasadeinteres" />
+                    <asp:BoundField DataField="TasaAhorros" HeaderText="TasaAhorros" SortExpression="TasaAhorros" />
                     <asp:BoundField DataField="Cliente" HeaderText="Cliente" SortExpression="Cliente" />
                     <asp:BoundField DataField="Identificacion" HeaderText="Identificacion" SortExpression="Identificacion" />
                     <asp:BoundField DataField="Idcliente" HeaderText="Idcliente" SortExpression="Idcliente" />
@@ -26,7 +26,7 @@
                 <SortedDescendingCellStyle BackColor="#FFFDF8" />
                 <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
             </asp:GridView>
-            <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" SelectMethod="getAhorros" TypeName="App.Datos.CuentasAhorros"></asp:ObjectDataSource>
+            <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" SelectMethod="getAhorros" TypeName="App.Datos.CuentasRepositorios"></asp:ObjectDataSource>
             <br />    
     </div>
     </div>

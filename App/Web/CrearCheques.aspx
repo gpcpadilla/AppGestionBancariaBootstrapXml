@@ -29,7 +29,7 @@
 
         <div class="form-group">
                 <label class="control-label" >Tasa De Interes Cheques</label>
-                 <asp:TextBox ID="txtTasadeinterest" runat="server" class="form-control"  pattern="[1234567890]*" required="" title="Digite Un Valor Correcto" ></asp:TextBox>
+                 <asp:TextBox ID="txtTasaCheques" runat="server" class="form-control"  pattern="[1234567890]*" required="" title="Digite Un Valor Correcto" ></asp:TextBox>
              </div>
              
              <div class="form-group">

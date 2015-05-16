@@ -8,17 +8,17 @@ namespace App.Modelo
     public class Ahorros : Cuentas
     {
         #region "Atributos"
-        private double tasaInteres;
+        private double tasaahorro;
         private static int count = 0;
         private static int numeroTransaciones = 3;
         #endregion
 
         #region "Propiedades"
 
-        public double Tasadeinteres
+        public double TasaAhorros
         {
-            get { return tasaInteres; }
-            set { tasaInteres = value; }
+            get { return tasaahorro; }
+            set { tasaahorro = value; }
         }
         #endregion
 
@@ -31,13 +31,13 @@ namespace App.Modelo
         public Ahorros()
             : base()
         {
-            this.tasaInteres = 0;
+            this.tasaahorro = 0;
         }
 
-        public Ahorros(string cliente, string identificacion, string idcliente, double balance, double tasadeinteres)
+        public Ahorros(string cliente, string identificacion, string idcliente, double balance, double tasaahorro)
             : base(cliente, identificacion, idcliente, balance)
         {
-            this.tasaInteres = tasadeinteres;
+            
         }
 
         #endregion
@@ -47,7 +47,7 @@ namespace App.Modelo
         public override string ToString()
         {
             return base.ToString() +
-                   "\nTasa de Interes: " + this.tasaInteres;
+                   "\nTasa de Interes: " + this.tasaahorro;
         }
         public override bool Equals(object obj)
         {
@@ -55,7 +55,7 @@ namespace App.Modelo
             bool result = false;
 
             if ((base.Equals(o)) &&
-               (this.tasaInteres == o.tasaInteres))
+               (this.tasaahorro == o.tasaahorro))
                 result = true;
 
             return result;
@@ -76,7 +76,7 @@ namespace App.Modelo
         {
             count++;
             if (count > numeroTransaciones)
-                this.Balance = (this.Balance - (valor + this.tasaInteres));
+                this.Balance = (this.Balance - (valor + this.tasaahorro));
 
             else
                 this.Balance = this.Balance - valor;

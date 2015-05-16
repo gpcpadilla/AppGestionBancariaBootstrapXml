@@ -9,7 +9,7 @@
             <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="ObjectDataSource3" CellPadding="4" ForeColor="#333333" GridLines="None" Height="226px" Width="680px">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <Columns>
-                    <asp:BoundField DataField="Tasadeinteres" HeaderText="Tasadeinteres" SortExpression="Tasadeinteres" />
+                    <asp:BoundField DataField="TasaCheques" HeaderText="TasaCheques" SortExpression="TasaCheques" />
                     <asp:BoundField DataField="Cliente" HeaderText="Cliente" SortExpression="Cliente" />
                     <asp:BoundField DataField="Identificacion" HeaderText="Identificacion" SortExpression="Identificacion" />
                     <asp:BoundField DataField="Idcliente" HeaderText="Idcliente" SortExpression="Idcliente" />
@@ -27,7 +27,7 @@
                 <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
             </asp:GridView>
             <br />    
-            <asp:ObjectDataSource ID="ObjectDataSource3" runat="server" SelectMethod="getCheques" TypeName="App.Datos.CuentasCheques"></asp:ObjectDataSource>
+            <asp:ObjectDataSource ID="ObjectDataSource3" runat="server" SelectMethod="getCheques" TypeName="App.Datos.CuentasRepositorios"></asp:ObjectDataSource>
     </div>
     </div>
 </form>

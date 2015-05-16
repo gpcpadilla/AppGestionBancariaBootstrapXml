@@ -88,9 +88,7 @@
     <Content Include="Web\Site1.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Datos\CuentasAhorros.cs" />
-    <Compile Include="Datos\CuentasCheques.cs" />
-    <Compile Include="Datos\CuentasCorrientes.cs" />
+    <Compile Include="Datos\CuentasRepositorios.cs" />
     <Compile Include="Modelo\Ahorros.cs" />
     <Compile Include="Modelo\Cheques.cs" />
     <Compile Include="Modelo\Corrientes.cs" />

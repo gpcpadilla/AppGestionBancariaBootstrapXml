@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<Corrientes>
-  <Corrientes>
-    <Cliente>54</Cliente>
-    <IDCliente>54</IDCliente>
-    <Identificacion>21</Identificacion>
-    <Balance>87</Balance>
-    <LimiteCreditos>54</LimiteCreditos>
-    <TasaInteres>6534</TasaInteres>
-  </Corrientes>
-</Corrientes>
+<Cuentas>
+<Ahorros>
+<Cliente>gfgf</Cliente>
+<IDCliente>98</IDCliente>
+<Identificacion>98</Identificacion>
+<Balance>98</Balance>
+<TasaAhorro>0</TasaAhorro>
+</Ahorros>
+</Cuentas>

@@ -58,22 +58,22 @@ namespace App.Web {
         protected global::System.Web.UI.WebControls.TextBox txtbalance;
         
         /// <summary>
-        /// Control txtlimitesDeCreditos.
+        /// Control txtLimitesCreditos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtlimitesDeCreditos;
+        protected global::System.Web.UI.WebControls.TextBox txtLimitesCreditos;
         
         /// <summary>
-        /// Control txttasaInteres.
+        /// Control txtTasaInteres.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txttasaInteres;
+        protected global::System.Web.UI.WebControls.TextBox txtTasaInteres;
         
         /// <summary>
         /// Control btnGuardar.

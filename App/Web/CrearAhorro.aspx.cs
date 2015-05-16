@@ -15,18 +15,18 @@ namespace App.Web
         }
         protected void btnGuardar_Click(object sender, EventArgs e)        {
             double balance = double.Parse(txtBalance.Text);
-            double tasadeinteres = double.Parse(txtTasadeinteres.Text);//ahorro
+            double tasaahorro = double.Parse(txtTasaAhorro.Text);//ahorro
 
-            Ahorros a = new Ahorros(
+            Ahorros t = new Ahorros(
                                         txtCliente.Text,
                                         txtIdentificacion.Text,
                                         txtIDcliente.Text,
                                         balance,
-                                        tasadeinteres
+                                        tasaahorro
                                        );
 
-            CuentasAhorros dataa = new CuentasAhorros();
-            dataa.add(a);
+            CuentasRepositorios dataahorros = new CuentasRepositorios();
+            dataahorros.add(t);
         }
     }
 }

@@ -58,13 +58,13 @@ namespace App.Web {
         protected global::System.Web.UI.WebControls.TextBox txtBalance;
         
         /// <summary>
-        /// Control txtTasadeinterest.
+        /// Control txtTasaCheques.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTasadeinterest;
+        protected global::System.Web.UI.WebControls.TextBox txtTasaCheques;
         
         /// <summary>
         /// Control btnGuardar.

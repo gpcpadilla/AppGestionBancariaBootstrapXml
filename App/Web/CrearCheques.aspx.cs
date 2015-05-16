@@ -22,18 +22,18 @@ namespace App.Web
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
             double balance = double.Parse(txtBalance.Text);
-            double tasadeinterest = double.Parse(txtTasadeinterest.Text);//chques
+            double tasacheques= double.Parse(txtTasaCheques.Text);//chques
 
             Cheques t = new Cheques(
                                         txtCliente.Text,
                                         txtIdentificacion.Text,
                                         txtIDcliente.Text,
                                         balance,
-                                        tasadeinterest
+                                        tasacheques
                                        );
 
-            CuentasCheques datab = new CuentasCheques();
-            datab.add(t);
+            CuentasRepositorios datacheques = new CuentasRepositorios();
+            datacheques.add(t);
         }
 
        

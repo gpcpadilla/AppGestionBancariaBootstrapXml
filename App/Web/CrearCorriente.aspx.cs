@@ -19,22 +19,22 @@ namespace App.Web
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
             double balance = double.Parse(txtbalance.Text);
-            double limitesDeCreditos = double.Parse(txtlimitesDeCreditos.Text);
-            double tasaInteres = double.Parse(txttasaInteres.Text);
+            double limitescreditos = double.Parse(txtLimitesCreditos.Text);
+            double tasainteres = double.Parse(txtTasaInteres.Text);
 
             Corrientes c = new Corrientes(
                                         txtcliente.Text, 
                                         txtidentificacion.Text,
                                         txtidcliente.Text,
                                         balance,
-                                        limitesDeCreditos,
-                                        tasaInteres
+                                        limitescreditos,
+                                        tasainteres
                                                                               
                                        );
 
-            CuentasCorrientes data = new CuentasCorrientes();
+            CuentasRepositorios datacorrientes = new CuentasRepositorios();
 
-            data.add(c);
+            datacorrientes.add(c);
           
 
         }
